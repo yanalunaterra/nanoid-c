@@ -41,7 +41,7 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
   Generates a Nano ID of the given length ≤256.
 
   Returns a newly allocated null-terminated string with the ID, or `NULL` if
-  [`calloc(3)`][] or [`getentropy(3)`][] fails.
+  [`calloc(3)`][] or [`getentropy(3)`][] fail.
 
 - macro `NANOID()`
 
