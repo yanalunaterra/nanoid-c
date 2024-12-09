@@ -58,6 +58,6 @@ Port of [Nano ID](https://github.com/ai/nanoid) by [Andrey Sitnik](https://sitni
 
 Original logo by [Anton Lovchikov](https://github.com/antiflasher).
 
-Social preview background texture from Plastic Bag Samples by [Tuomo](https://x.com/tuomodesign).
+Social preview background texture by [Tuomo](https://x.com/tuomodesign).
 
 Social preview logo assistance by [Tanya Nevskaya](https://github.com/unparalloser).
