@@ -29,8 +29,7 @@ V1StGXR8_Z5jdHi6B-myT
 ## Overview
 
 Works out of the box on Linux, Android, macOS, iOS, FreeBSD, NetBSD, OpenBSD,
-Illumos, Fuchsia, and WASI. Windows support requires a [`getentropy(3)`][]
-compatibility shim.
+Illumos, Fuchsia, and WASI. Windows support requires a [`getentropy(3)`][] shim.
 
 For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
