@@ -12,7 +12,7 @@ Tiny, secure, URL-friendly unique string ID generator for C.
 ```c
 #include <nanoid.h>
 
-void main() {
+int main() {
   char *id = NANOID();
 
   if (id)
