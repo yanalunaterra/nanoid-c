@@ -36,18 +36,18 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
 ## Documentation
 
+- macro `NANOID()`
+
+  Generates a Nano ID of the default length.
+
+  Expands to `nanoid(21)`.
+
 - static function `char *nanoid(size_t length)`
   
   Generates a Nano ID of the given length ≤256.
 
   Returns a newly allocated null-terminated string with the ID, or `NULL` if
   [`calloc(3)`][] or [`getentropy(3)`][] fail.
-
-- macro `NANOID()`
-
-  Generates a Nano ID of the default length.
-
-  Expands to `nanoid(21)`.
 
 [`calloc(3)`]: https://man7.org/linux/man-pages/man3/calloc.3.html
 [`getentropy(3)`]: https://man7.org/linux/man-pages/man3/getentropy.3.html

@@ -5,10 +5,15 @@
 .Nd generate a Nano ID
 .Sh SYNOPSIS
 .In nanoid.h
+.Fn NANOID
 .Ft "char *"
 .Fn nanoid "size_t length"
-.Fn NANOID
 .Sh DESCRIPTION
+.Fn NANOID
+generates a Nano ID of the default length.
+Expands to
+.Fn nanoid 21 .
+
 .Fn nanoid
 generates a Nano ID of the given length ≤256.
 Returns a newly allocated null-terminated string with the ID, or
@@ -18,11 +23,6 @@ if
 or
 .Xr getentropy 3
 fail.
-
-.Fn NANOID
-generates a Nano ID of the default length.
-Expands to
-.Fn nanoid 21 .
 .Sh RETURN VALUES
 .Rv -std
 .Sh SEE ALSO
