@@ -36,7 +36,7 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
 ## Documentation
 
-- function `char *nanoid(size_t length)`
+- static function `char *nanoid(size_t length)`
   
   Generates a Nano ID of the given length ≤256.
 
