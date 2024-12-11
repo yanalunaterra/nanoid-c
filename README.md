@@ -16,8 +16,10 @@ Tiny, secure, URL-friendly unique string ID generator for C.
 int main() {
   char *id = NANOID();
 
-  if (id)
+  if (id) {
     puts(id);
+    free(id);
+  }
 }
 ```
 
