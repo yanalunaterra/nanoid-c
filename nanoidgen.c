@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
   char *id = nanoid(length);
 
   if (!id) {
-    perror(argv[0]);
+    perror("nanoidgen");
     return EXIT_FAILURE;
   }
 
