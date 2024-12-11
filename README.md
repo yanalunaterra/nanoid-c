@@ -53,8 +53,8 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
   Returns a newly allocated null-terminated string with the ID, or `NULL` if
   [`calloc(3)`][] or [`getentropy(3)`][] fail.
 
-[`calloc(3)`]: https://man7.org/linux/man-pages/man3/calloc.3.html
-[`getentropy(3)`]: https://man7.org/linux/man-pages/man3/getentropy.3.html
+[`calloc(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/calloc.html
+[`getentropy(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html
 
 ## Attribution
 
