@@ -1,7 +1,13 @@
 project('nanoid', 'c', version: '1.0.0')
 
 install_headers('nanoid.h')
-install_man('nanoid.3')
+
+if host_machine.system() == 'openbsd'
+  install_man('openbsd/nanoid.3')
+else
+  install_man('nanoid.3')
+endif
 
 executable('nanoidgen', 'nanoidgen.c', install: true)
+
 install_man('nanoidgen.1')

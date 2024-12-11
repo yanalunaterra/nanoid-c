@@ -1,0 +1,32 @@
+.Dd December 8, 2024
+.Dt nanoid 3
+.Sh NAME
+.Nm nanoid
+.Nd generate a Nano ID
+.Sh SYNOPSIS
+.In nanoid.h
+.Fn NANOID
+.Ft "char *"
+.Fn nanoid "size_t length"
+.Sh DESCRIPTION
+.Fn NANOID
+generates a Nano ID of the default length.
+Expands to
+.Fn nanoid 21 .
+
+.Fn nanoid
+generates a Nano ID of the given length ≤256.
+Returns a newly allocated null-terminated string with the ID, or
+.Dv NULL
+if
+.Xr calloc 3
+or
+.Xr getentropy 2
+fail.
+.Sh RETURN VALUES
+.Rv -std
+.Sh SEE ALSO
+.Xr nanoidgen 1
+.Sh AUTHORS
+Written by
+.An Luka Teras Aq Mt luka@sdf.org .
