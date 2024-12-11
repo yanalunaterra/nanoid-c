@@ -4,7 +4,7 @@
 
 Tiny, secure, URL-friendly unique string ID generator for C.
 
-- **Small.** 241 bytes. Header-only. No dependencies but libc.
+- **Small.** 241 bytes. Header-only. No dependencies other than libc.
 - **Safe.** Uses [`getentropy(3)`][], a modern, reliable, secure randomness source.
 - **Short IDs.** While UUIDs are 36 chars, similarly unique Nano IDs are just 21 due to the larger alphabet.
 - **Portable.** Nano ID has been ported to 20+ programming languages.
