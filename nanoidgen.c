@@ -22,14 +22,10 @@ int main(int argc, char *argv[]) {
 
   char *id = nanoid(length);
 
-  if (!id) {
-error:
+  if (!id || puts(id) < 0) {
     perror("nanoidgen");
     return EXIT_FAILURE;
   }
-
-  if (puts(id) < 0)
-    goto error;
 
   free(id);
 }
