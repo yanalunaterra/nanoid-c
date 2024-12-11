@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     }
   } else if (argc > 2) {
     fprintf(stderr, "nanoidgen: Expected at most 1 argument, got: %d\n", argc-1);
-    return 64;
+    return 64; /* EX_USAGE */
   }
 
   char *id = nanoid(length);
