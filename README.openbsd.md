@@ -5,7 +5,7 @@
 A tiny, secure, URL-friendly unique string ID generator for C.
 
 - **Small.** 241 bytes. Header-only. No dependencies other than libc.
-- **Safe.** Uses [`getentropy(3)`][], a modern, reliable, secure randomness source.
+- **Safe.** Uses [`getentropy(2)`][], a modern, reliable, secure randomness source.
 - **Short IDs.** Nano IDs are 15 characters shorter than UUIDs while packing slightly more entropy.
 - **Portable.** POSIX-compliant. Available in [nearly 30 programming languages][ports].
 
@@ -34,7 +34,7 @@ V1StGXR8_Z5jdHi6B-myT
 ## Overview
 
 Works out of the box on Linux, Android, macOS, iOS, FreeBSD, NetBSD, OpenBSD,
-Illumos, Fuchsia, and WASI. Windows support requires a [`getentropy(3)`][] shim.
+Illumos, Fuchsia, and WASI. Windows support requires a [`getentropy(2)`][] shim.
 
 For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
@@ -51,10 +51,10 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
   Generates a Nano ID of the given length ≤256.
 
   Returns a newly allocated null-terminated string with the ID, or `NULL` if
-  [`calloc(3)`][] or [`getentropy(3)`][] fail.
+  [`calloc(3)`][] or [`getentropy(2)`][] fail.
 
-[`calloc(3)`]: https://man7.org/linux/man-pages/man3/calloc.3.html
-[`getentropy(3)`]: https://man7.org/linux/man-pages/man3/getentropy.3.html
+[`calloc(3)`]: https://man.openbsd.org/calloc.3
+[`getentropy(2)`]: https://man.openbsd.org/getentropy.2
 
 ## Attribution
 
