@@ -2,7 +2,7 @@
 
 <img src="logo.svg" align="right" alt="Logo" width="180" height="94">
 
-Tiny, secure, URL-friendly unique string ID generator for C.
+A tiny, secure, URL-friendly unique string ID generator for C.
 
 - **Small.** 241 bytes. Header-only. No dependencies other than libc.
 - **Safe.** Uses [`getentropy(3)`][], a modern, reliable, secure randomness source.
