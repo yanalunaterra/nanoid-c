@@ -26,6 +26,4 @@ int main(int argc, char *argv[]) {
     perror("nanoidgen");
     return EXIT_FAILURE;
   }
-
-  free(id);
 }
