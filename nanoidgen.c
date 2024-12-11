@@ -11,13 +11,14 @@ int main(int argc, char *argv[]) {
     if (errno || length == 0) {
       fprintf(stderr, "nanoidgen: Invalid length: %s\n", argv[1]);
       return EXIT_FAILURE;
-    } else if (length > 256) {
+    }
+    if (length > /* GETENTROPY_MAX */ 256) {
       fprintf(stderr, "nanoidgen: Maximum length 256, got: %zu\n", length);
       return EXIT_FAILURE;
     }
   } else if (argc > 2) {
     fprintf(stderr, "nanoidgen: Expected at most 1 argument, got: %d\n", argc-1);
-    return 64; /* EX_USAGE */
+    return /* EX_USAGE */ 64;
   }
 
   char *id = nanoid(length);
