@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     length = strtoul(argv[1], NULL, 10);
 
     if (length < 1 || length > 256) {
-      fprintf(stderr, "Length %s not within 1...256\n", argv[1]);
+      fprintf(stderr, "Length %s not within [1, 256]\n", argv[1]);
       goto usage;
     }
   } else if (argc > 2) {
