@@ -9,14 +9,13 @@ int main(int argc, char *argv[]) {
 
     if (length <= 0) {
       fprintf(stderr, "nanoidgen: invalid length %s\n", argv[1]);
-      goto usage;
+      return EXIT_FAILURE;
     } else if (length > 256) {
       fprintf(stderr, "nanoidgen: maximum length 256, got %s\n", argv[1]);
-      goto usage;
+      return EXIT_FAILURE;
     }
   } else if (argc > 2) {
     fprintf(stderr, "nanoidgen: expected at most 1 argument, got %d\n", argc-1);
-  usage:
     return 64;
   }
 
