@@ -41,8 +41,6 @@ You've already seen this ID format elsewhere: on YouTube.
 By default, a Nano ID is 21 characters long. 6 bits of entropy per character,
 126 bits per ID.
 
-For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
-
 [Base64url]: https://datatracker.ietf.org/doc/html/rfc4648#section-5
 
 ## Setup
@@ -52,6 +50,8 @@ FreeBSD, DragonFly, Haiku, Fuchsia, WASI, and Emscripten. Windows support
 requires a [`getentropy(3)`][] shim.
 
 ## Usage
+
+For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
 ### `nanoid(3)`
 
