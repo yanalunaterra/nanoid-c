@@ -1,0 +1,34 @@
+name: GH Pages
+
+on:
+  push:
+    branches:
+    - trunk
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  man:
+    runs-on: ubuntu-latest
+    steps:
+    - run: sudo apt install -y mandoc
+    - uses: actions/checkout@v4
+    - run: mkdir man
+    - run: mman -T html ./nanoid.3 > man/nanoid.3.html
+    - run: mman -T pdf ./nanoid.3 > man/nanoid.3.pdf
+    - run: mman -T html ./nanoidgen.1 > man/nanoidgen.1.html
+    - run: mman -T pdf ./nanoidgen.1 > man/nanoidgen.1.pdf
+    - run: mkdir man/openbsd
+    - run: mman -T html ./openbsd/nanoid.3 > man/openbsd/nanoid.3.html
+    - run: mman -T pdf ./openbsd/nanoid.3 > man/openbsd/nanoid.3.pdf
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: man
+    - id: deployment
+      uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
