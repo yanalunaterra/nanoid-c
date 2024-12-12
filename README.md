@@ -51,7 +51,7 @@ Works out of the box on NetBSD, OpenBSD, Linux, Android, macOS, iOS, illumos,
 FreeBSD, DragonFly, Haiku, Fuchsia, WASI, and Emscripten. Windows support
 requires a [`getentropy(3)`][] shim.
 
-## Documentation
+## Usage
 
 ### `nanoid(3)`
 
