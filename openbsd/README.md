@@ -49,11 +49,13 @@ Works out of the box on OpenBSD, NetBSD, Linux, Android, macOS, iOS, illumos,
 FreeBSD, DragonFly, Haiku, Fuchsia, WASI, and Emscripten. Windows support
 requires a [`getentropy(2)`][] shim.
 
+To build just [`nanoidgen(1)`][], run `make nanoidgen`. No `Makefile` required.
+
 ## Usage
 
 For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
-### [`nanoid(3)`](https://lukateras.github.io/nanoid.h/openbsd/nanoid.3.html)
+### [`nanoid(3)`][]
 
 ```c
 #include <nanoid.h>
@@ -72,14 +74,16 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
   Returns a newly allocated null-terminated string with the ID, or `NULL` if
   [`calloc(3)`][] or [`getentropy(2)`][] fail.
 
-[`calloc(3)`]: https://man.openbsd.org/calloc.3
-[`getentropy(2)`]: https://man.openbsd.org/getentropy.2
-
-### [`nanoidgen(1)`](https://lukateras.github.io/nanoid.h/nanoidgen.1.html)
+### [`nanoidgen(1)`][]
 
 ```
 nanoidgen [length]
 ```
+
+[`calloc(3)`]: https://man.openbsd.org/calloc.3
+[`getentropy(2)`]: https://man.openbsd.org/getentropy.2
+[`nanoid(3)`]: https://lukateras.github.io/nanoid.h/openbsd/nanoid.3.html
+[`nanoidgen(1)`]: https://lukateras.github.io/nanoid.h/nanoidgen.1.html
 
 ## Attribution
 
