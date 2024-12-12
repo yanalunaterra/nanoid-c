@@ -51,9 +51,7 @@ requires a [`getentropy(3)`][] shim.
 
 ## Usage
 
-For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
-
-### `nanoid(3)`
+### [`nanoid(3)`](https://lukateras.github.io/nanoid.h/nanoid.3.html)
 
 ```c
 #include <nanoid.h>
@@ -75,7 +73,7 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 [`calloc(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/calloc.html
 [`getentropy(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html
 
-### `nanoidgen(1)`
+### [`nanoidgen(1)`](https://lukateras.github.io/nanoid.h/nanoidgen.1.html)
 
 ```
 nanoidgen [length]
