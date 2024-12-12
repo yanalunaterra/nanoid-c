@@ -53,6 +53,12 @@ requires a [`getentropy(2)`][] shim.
 
 ## Documentation
 
+### `nanoid(3)`
+
+```c
+#include <nanoid.h>
+```
+
 - macro `NANOID()`
 
   Generates a Nano ID of the default length.
@@ -68,6 +74,8 @@ requires a [`getentropy(2)`][] shim.
 
 [`calloc(3)`]: https://man.openbsd.org/calloc.3
 [`getentropy(2)`]: https://man.openbsd.org/getentropy.2
+
+### `nanoidgen(1)`
 
 ## Attribution
 
