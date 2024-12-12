@@ -34,12 +34,12 @@ V1StGXR8_Z5jdHi6B-myT
 
 ## Overview
 
-Nano IDs are unique string IDs where each character is an alphanumeric, a
-hyphen, or an underscore. Think of them as random unpadded [Base64url][]
-strings. You've already seen this format elsewhere: in YouTube video IDs.
+A Nano ID is a unique string ID where each character is an alphanumeric, a
+hyphen, or an underscore. Think of it as a random unpadded [Base64url][] string.
+You've already seen this ID format elsewhere: on YouTube.
 
-By default, Nano IDs are 21 characters long (~40% shorter than UUIDs). 6 bits
-of entropy per character, 126 bits per ID.
+By default, a Nano ID is 21 characters long. 6 bits of entropy per character,
+126 bits per ID.
 
 Works out of the box on Linux, Android, macOS, iOS, FreeBSD, NetBSD, OpenBSD,
 Illumos, Fuchsia, and WASI. Windows support requires a [`getentropy(2)`][] shim.
