@@ -77,6 +77,10 @@ requires a [`getentropy(3)`][] shim.
 
 ### `nanoidgen(1)`
 
+```
+nanoidgen [length]
+```
+
 ## Attribution
 
 Port of [Nano ID](https://github.com/ai/nanoid) by [Andrey Sitnik](https://sitnik.ru).
