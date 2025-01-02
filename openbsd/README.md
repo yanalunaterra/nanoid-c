@@ -1,6 +1,6 @@
 # Nano ID for C
 
-<img src="logo.svg" align="right" alt="Logo" width="180" height="94">
+<img src="../logo.svg" align="right" alt="Logo" width="180" height="94">
 
 A tiny, secure, URL-friendly unique string ID generator for C.
 
