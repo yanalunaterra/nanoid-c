@@ -53,7 +53,7 @@ support requires a [`getentropy(3)`][] shim.
 
 To include [`nanoid(3)`][] copy `nanoid.h` and `LICENSE.txt` to your project.
 
-To build [`nanoidgen(1)`][] run `make nanoidgen`. No `Makefile` required.
+To build [`nanoidgen(1)`][] run `make nanoidgen`. (No `Makefile` required.)
 
 To build and install the project use [Meson][]:
 
