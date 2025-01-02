@@ -69,7 +69,7 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
 - static function `char *nanoid(size_t length)`
 
-  Generates a Nano ID of the given length ≤256.
+  Generates a Nano ID of the given length up to 256.
 
   Returns a newly allocated null-terminated string with the ID, or `NULL` if
   [`calloc(3)`][] or [`getentropy(2)`][] fail.
