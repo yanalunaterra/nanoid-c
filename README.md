@@ -76,6 +76,9 @@ To build just [`nanoidgen(1)`][], run `make nanoidgen`. No `Makefile` required.
 
 Usage: `nanoidgen [length]`
 
+Generates a Nano ID of the default length, or the specified length within 1 and
+256, and prints it to the standard output.
+
 [`calloc(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/calloc.html
 [`getentropy(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html
 [`nanoid(3)`]: https://lukateras.github.io/nanoid.h/nanoid.3.html

@@ -78,6 +78,9 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
 Usage: `nanoidgen [length]`
 
+Generates a Nano ID of the default length, or the specified length within 1 and
+256, and prints it to the standard output.
+
 [`calloc(3)`]: https://man.openbsd.org/calloc.3
 [`getentropy(2)`]: https://man.openbsd.org/getentropy.2
 [`nanoid(3)`]: https://lukateras.github.io/nanoid.h/openbsd/nanoid.3.html
