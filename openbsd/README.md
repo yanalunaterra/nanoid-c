@@ -34,12 +34,12 @@ V1StGXR8_Z5jdHi6B-myT
 
 ## Overview
 
-A Nano ID is a unique string ID where each character is an alphanumeric, a
-hyphen, or an underscore. Think of it as a random unpadded [Base64url][] string.
-You've already seen this ID format elsewhere: on YouTube.
+Nano IDs are unique string IDs where each character is an alphanumeric, a
+hyphen, or an underscore. Think of them as random unpadded [Base64url][]
+strings. You've already seen this ID format elsewhere: on YouTube.
 
-By default, a Nano ID is 21 characters long. 6 bits of entropy per character,
-126 bits per ID.
+A default-sized Nano ID is 21 characters long: 126 bits of entropy at 6 bits
+per character.
 
 [Base64url]: https://datatracker.ietf.org/doc/html/rfc4648#section-5
 
