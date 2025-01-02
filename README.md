@@ -71,7 +71,7 @@ $ ninja install
 
 ## Documentation
 
-The manual is available at <https://lukateras.github.io/nanoid.h/man.pdf>.
+See the PDF manual at <https://lukateras.github.io/nanoid.h/man.pdf>.
 
 ### [`nanoid(3)`][]
 

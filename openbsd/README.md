@@ -71,7 +71,7 @@ $ ninja install
 
 ## Documentation
 
-The manual is available at <https://lukateras.github.io/nanoid.h/openbsd/man.pdf>.
+See the PDF manual at <https://lukateras.github.io/nanoid.h/openbsd/man.pdf>.
 
 ### [`nanoid(3)`][]
 
