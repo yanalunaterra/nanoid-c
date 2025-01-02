@@ -83,7 +83,7 @@ See the PDF manual at <https://lukateras.github.io/nanoid.h/man.pdf>.
 
   The default Nano ID length of 21.
 
-- static function `int *nanoidgen(char *buffer, size_t length)`
+- static inline function `int *nanoidgen(char *buffer, size_t length)`
 
   Fills the buffer with a Nano ID of the specified length up to 256.
 
