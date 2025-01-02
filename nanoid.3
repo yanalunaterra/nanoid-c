@@ -5,24 +5,16 @@
 .Nd generate a Nano ID
 .Sh SYNOPSIS
 .In nanoid.h
-.Fn NANOID
-.Ft "char *"
-.Fn nanoid "size_t length"
+.Ft "int"
+.Fn nanoidgen "char *buffer" "size_t length"
 .Sh DESCRIPTION
-.Fn NANOID
-generates a Nano ID of the default length.
-Expands to
-.Fn nanoid 21 .
+.Dv NANOIDLEN
+expands to the default Nano ID length of 21.
 
-.Fn nanoid
-generates a Nano ID of the specified length up to 256.
-Returns a newly allocated null-terminated string with the ID, or
-.Dv NULL
-if
-.Xr calloc 3
-or
-.Xr getentropy 3
-fail.
+.Fn nanoidgen
+fills the buffer with a Nano ID of the specified length up to 256.
+Returns the return value of
+.Xr getentropy 3 .
 .Sh RETURN VALUES
 .Rv -std
 .Sh SEE ALSO

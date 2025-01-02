@@ -4,7 +4,7 @@
 
 A tiny, secure, URL-friendly unique string ID generator for C.
 
-- **Small.** 241 bytes. Header-only. No dependencies other than libc.
+- **Small.** 199 bytes. Header-only. No dependencies other than libc.
 - **Safe.** Uses [`getentropy(3)`][], a modern, reliable, secure randomness source.
 - **Short IDs.** A default Nano ID is 15 characters shorter than a UUIDv4 while
   encoding 4 bits more entropy.
@@ -13,14 +13,16 @@ A tiny, secure, URL-friendly unique string ID generator for C.
 ```c
 #include <nanoid.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-  char *id = NANOID();
+  char *id = calloc(NANOIDLEN + 1, 1);
 
-  if (id) {
-    puts(id);
-    free(id);
-  }
+  if (!id || nanoidgen(id, NANOIDLEN))
+    return EXIT_FAILURE;
+
+  puts(id);
+  free(id);
 }
 ```
 
@@ -71,18 +73,15 @@ $ ninja install
 #include <nanoid.h>
 ```
 
-- macro `NANOID()`
+- macro `NANOIDLEN`
 
-  Generates a Nano ID of the default length.
+  The default Nano ID length of 21.
 
-  Expands to `nanoid(21)`.
+- static function `int *nanoidgen(char *buffer, size_t length)`
 
-- static function `char *nanoid(size_t length)`
+  Fills the buffer with a Nano ID of the specified length up to 256.
 
-  Generates a Nano ID of the specified length up to 256.
-
-  Returns a newly allocated null-terminated string with the ID, or `NULL` if
-  [`calloc(3)`][] or [`getentropy(3)`][] fail.
+  Returns the return value of [`getentropy(3)`][].
 
 ### [`nanoidgen(1)`][]
 
@@ -91,7 +90,6 @@ Usage: `nanoidgen [length]`
 Generates a Nano ID of the default length, or the specified length within 1 and
 256, and prints it to the standard output.
 
-[`calloc(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/calloc.html
 [`getentropy(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html
 [`nanoid(3)`]: https://lukateras.github.io/nanoid.h/nanoid.3.html
 [`nanoidgen(1)`]: https://lukateras.github.io/nanoid.h/nanoidgen.1.html
