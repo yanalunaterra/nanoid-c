@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
   } else if (argc > 2) {
     fprintf(stderr, "nanoidgen: Expected at most 1 argument, got: %d\n",
             argc - 1);
-    return /* EX_USAGE */ 64;
+    return EXIT_FAILURE;
   }
 
   char *id = calloc(length + 1, 1);
