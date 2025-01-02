@@ -51,7 +51,8 @@ Works out of the box on NetBSD, OpenBSD, Linux, Android, macOS, illumos,
 Solaris, FreeBSD, DragonFly, Haiku, Fuchsia, Emscripten, and WASI. Windows
 support requires a [`getentropy(3)`][] shim.
 
-To include [`nanoid(3)`][] copy `nanoid.h` and `LICENSE.txt` to your project.
+To include [`nanoid(3)`][] copy [`nanoid.h`][] and [`LICENSE.txt`][] to your
+project.
 
 To build [`nanoidgen(1)`][] run `make nanoidgen`. (No `Makefile` required.)
 
@@ -62,6 +63,9 @@ $ meson setup ../nanoid
 $ cd ../nanoid
 $ ninja install
 ```
+
+[`nanoid.h`]: nanoid.h
+[`LICENSE.txt`]: LICENSE.txt
 
 [Meson]: https://meson.build
 
