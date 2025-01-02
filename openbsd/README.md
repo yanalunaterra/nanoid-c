@@ -36,7 +36,7 @@ V1StGXR8_Z5jdHi6B-myT
 
 Nano IDs are unique string IDs where each character is an alphanumeric, a
 hyphen, or an underscore. Think of them as random unpadded [Base64url][]
-strings. You've already seen this ID format elsewhere: on YouTube!
+strings. You've already seen this format elsewhere: on YouTube!
 
 A default Nano ID is 21 characters long, encoding 126 bits of entropy at 6 bits
 per character.
@@ -64,8 +64,6 @@ $ ninja install
 [Meson]: https://meson.build
 
 ## Documentation
-
-For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
 ### [`nanoid(3)`][]
 
