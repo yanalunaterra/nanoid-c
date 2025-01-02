@@ -51,7 +51,7 @@ requires a [`getentropy(3)`][] shim.
 
 To build just [`nanoidgen(1)`][], run `make nanoidgen`. No `Makefile` required.
 
-## Usage
+## Documentation
 
 ### [`nanoid(3)`][]
 
