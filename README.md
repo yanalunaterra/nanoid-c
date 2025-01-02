@@ -95,8 +95,8 @@ Generates a Nano ID of the default length, or the specified length within 1 and
 256, and prints it to the standard output.
 
 [`getentropy(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html
-[`nanoid(3)`]: https://lukateras.github.io/nanoid.h/nanoid.3.html
-[`nanoidgen(1)`]: https://lukateras.github.io/nanoid.h/nanoidgen.1.html
+[`nanoid(3)`]: https://lukateras.github.io/nanoid.h/man/nanoid.3.html
+[`nanoidgen(1)`]: https://lukateras.github.io/nanoid.h/man/nanoidgen.1.html
 
 ## Attribution
 
