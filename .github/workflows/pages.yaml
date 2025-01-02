@@ -18,12 +18,11 @@ jobs:
     - uses: actions/checkout@v4
     - run: mkdir man
     - run: mman -T html ./nanoid.3 > man/nanoid.3.html
-    - run: mman -T pdf ./nanoid.3 > man/nanoid.3.pdf
     - run: mman -T html ./nanoidgen.1 > man/nanoidgen.1.html
-    - run: mman -T pdf ./nanoidgen.1 > man/nanoidgen.1.pdf
+    - run: mman -T pdf ./nanoid.3 ./nanoidgen.1 > man/man.pdf
     - run: mkdir man/openbsd
     - run: mman -T html ./openbsd/nanoid.3 > man/openbsd/nanoid.3.html
-    - run: mman -T pdf ./openbsd/nanoid.3 > man/openbsd/nanoid.3.pdf
+    - run: mman -T pdf ./openbsd/nanoid.3 ./nanoidgen.1 > man/openbsd/man.pdf
     - uses: actions/upload-pages-artifact@v3
       with:
         path: man
