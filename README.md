@@ -45,7 +45,7 @@ per character.
 
 ## Usage
 
-Works out of the box on NetBSD, OpenBSD, Linux, Android, macOS, iOS, illumos,
+Works out of the box on NetBSD, OpenBSD, Linux, Android, macOS, illumos,
 FreeBSD, DragonFly, Haiku, Fuchsia, WASI, and Emscripten. Windows support
 requires a [`getentropy(3)`][] shim.
 
