@@ -1,4 +1,4 @@
-project('nanoid', 'c', version: '1.0.0')
+project('nanoid', 'c', version: '1.0.1')
 
 install_headers('nanoid.h')
 
