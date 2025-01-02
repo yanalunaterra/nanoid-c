@@ -43,7 +43,7 @@ per character.
 
 [Base64url]: https://datatracker.ietf.org/doc/html/rfc4648#section-5
 
-## Setup
+## Usage
 
 Works out of the box on NetBSD, OpenBSD, Linux, Android, macOS, iOS, illumos,
 FreeBSD, DragonFly, Haiku, Fuchsia, WASI, and Emscripten. Windows support
