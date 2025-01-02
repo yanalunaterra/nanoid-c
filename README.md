@@ -67,7 +67,7 @@ To build just [`nanoidgen(1)`][], run `make nanoidgen`. No `Makefile` required.
 
 - static function `char *nanoid(size_t length)`
 
-  Generates a Nano ID of the given length up to 256.
+  Generates a Nano ID of the specified length up to 256.
 
   Returns a newly allocated null-terminated string with the ID, or `NULL` if
   [`calloc(3)`][] or [`getentropy(3)`][] fail.
