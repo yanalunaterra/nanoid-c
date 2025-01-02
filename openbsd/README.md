@@ -48,7 +48,7 @@ per character.
 ## Usage
 
 Works out of the box on OpenBSD, NetBSD, macOS, Linux, Android, Solaris,
-illumos, FreeBSD, DragonFly, Haiku, Fuchsia, WASI, and Emscripten. Windows
+illumos, FreeBSD, DragonFly, Haiku, Fuchsia, Emscripten, and WASI. Windows
 support requires a [`getentropy(2)`][] shim.
 
 To include [`nanoid(3)`][], copy `nanoid.h` and `LICENSE.txt` to your project.
