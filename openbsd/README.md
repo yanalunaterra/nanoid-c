@@ -76,9 +76,7 @@ For details, consult `nanoid(3)` and `nanoidgen(1)` man pages.
 
 ### [`nanoidgen(1)`][]
 
-```
-nanoidgen [length]
-```
+Usage: `nanoidgen [length]`
 
 [`calloc(3)`]: https://man.openbsd.org/calloc.3
 [`getentropy(2)`]: https://man.openbsd.org/getentropy.2

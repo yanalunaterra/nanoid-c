@@ -74,9 +74,7 @@ To build just [`nanoidgen(1)`][], run `make nanoidgen`. No `Makefile` required.
 
 ### [`nanoidgen(1)`][]
 
-```
-nanoidgen [length]
-```
+Usage: `nanoidgen [length]`
 
 [`calloc(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/calloc.html
 [`getentropy(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html
