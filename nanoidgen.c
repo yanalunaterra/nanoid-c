@@ -35,5 +35,7 @@ int main(int argc, char *argv[]) {
   if (!id || nanoidgen(id, length) || puts(id) < 0) {
     perror("nanoidgen");
     return EXIT_FAILURE;
+  } else {
+    free(id);
   }
 }
