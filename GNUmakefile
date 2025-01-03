@@ -2,34 +2,34 @@ MANDOC ?= mandoc
 
 default: nanoidgen
 
-all: pub/man.pdf pub/man/nanoid.3.html pub/man/nanoidgen.1.html \
-     pub/openbsd/man.pdf pub/openbsd/man/nanoid.3.html nanoidgen
+all: public/man.pdf public/man/nanoid.3.html public/man/nanoidgen.1.html \
+     public/openbsd/man.pdf public/openbsd/man/nanoid.3.html nanoidgen
 
 clean:
-	rm -r pub nanoidgen
+	rm -r public nanoidgen
 
 .PHONY: default all clean
 
-pub:
+public:
 	mkdir -p $@
 
-pub/man: pub
+public/man: public
 	mkdir -p $@
 
-pub/man.pdf: nanoid.3 nanoidgen.1 pub
+public/man.pdf: nanoid.3 nanoidgen.1 public
 	$(MANDOC) -T pdf nanoid.3 nanoidgen.1 > $@
 
-pub/man/%.html: % pub/man
+public/man/%.html: % public/man
 	$(MANDOC) -T html $< > $@
 
-pub/openbsd: pub
+public/openbsd: public
 	mkdir -p $@
 
-pub/openbsd/man: pub/openbsd
+public/openbsd/man: public/openbsd
 	mkdir -p $@
 
-pub/openbsd/man.pdf: openbsd/nanoid.3 nanoidgen.1 pub/openbsd
+public/openbsd/man.pdf: openbsd/nanoid.3 nanoidgen.1 public/openbsd
 	$(MANDOC) -T pdf openbsd/nanoid.3 nanoidgen.1 > $@
 
-pub/openbsd/man/%.html: openbsd/% pub/openbsd/man
+public/openbsd/man/%.html: openbsd/% public/openbsd/man
 	$(MANDOC) -T html $< > $@

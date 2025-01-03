@@ -19,7 +19,7 @@ jobs:
     - run: make all
     - uses: actions/upload-pages-artifact@v3
       with:
-        path: pub
+        path: public
     - id: deployment
       uses: actions/deploy-pages@v4
     environment:
