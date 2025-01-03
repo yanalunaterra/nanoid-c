@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NANOIDMAXLEN 256 // GETENTROPY_MAX
+#define NANOIDMAXLEN 256 // GETENTROPY_MAX isn't portable
 
 int main(int argc, char *argv[]) {
   size_t length = NANOIDLEN;
