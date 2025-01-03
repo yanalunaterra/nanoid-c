@@ -2,8 +2,8 @@ MANDOC ?= mandoc
 
 default: nanoidgen
 
-all: nanoidgen pub/man.pdf pub/man/nanoid.3.html pub/man/nanoidgen.1.html \
-     pub/openbsd/man.pdf pub/openbsd/man/nanoid.3.html
+all: pub/man.pdf pub/man/nanoid.3.html pub/man/nanoidgen.1.html \
+     pub/openbsd/man.pdf pub/openbsd/man/nanoid.3.html nanoidgen
 
 clean:
 	rm -r pub nanoidgen
