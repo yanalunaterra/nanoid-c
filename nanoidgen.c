@@ -3,7 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NANOIDMAXLEN 256 // GETENTROPY_MAX isn't portable
+#ifndef GETENTROPY_MAX
+#define GETENTROPY_MAX 256
+#endif
 
 int main(int argc, char *argv[]) {
   size_t length = NANOIDLEN;
@@ -17,9 +19,9 @@ int main(int argc, char *argv[]) {
       fprintf(stderr, "nanoidgen: Minimum length 1, got: %zu\n", length);
       return EXIT_FAILURE;
     }
-    if (length > NANOIDMAXLEN) {
-      fprintf(stderr, "nanoidgen: Maximum length %u, got: %zu\n", NANOIDMAXLEN,
-              length);
+    if (length > GETENTROPY_MAX) {
+      fprintf(stderr, "nanoidgen: Maximum length %u, got: %zu\n",
+              GETENTROPY_MAX, length);
       return EXIT_FAILURE;
     }
   } else if (argc > 2) {
@@ -28,7 +30,7 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  char id[NANOIDMAXLEN + 1] = "";
+  char id[GETENTROPY_MAX + 1] = "";
   if (nanoidgen(id, length) || puts(id) < 0) {
     perror("nanoidgen");
     return EXIT_FAILURE;
