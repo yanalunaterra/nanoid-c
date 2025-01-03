@@ -60,8 +60,7 @@ To build and install the project use [Meson][]:
 
 ```
 $ meson setup ../nanoid
-$ cd ../nanoid
-$ ninja install
+$ ninja -C ../nanoid install
 ```
 
 [`nanoid.h`]: nanoid.h
