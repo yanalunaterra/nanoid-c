@@ -15,12 +15,10 @@ int main(int argc, char *argv[]) {
     if (errno) {
       fprintf(stderr, "nanoidgen: Invalid length: %s\n", argv[1]);
       return EXIT_FAILURE;
-    }
-    if (length < 1) {
+    } else if (length < 1) {
       fprintf(stderr, "nanoidgen: Minimum length 1, got: %zu\n", length);
       return EXIT_FAILURE;
-    }
-    if (length > GETENTROPY_MAX) {
+    } else if (length > GETENTROPY_MAX) {
       fprintf(stderr, "nanoidgen: Maximum length %u, got: %zu\n",
               GETENTROPY_MAX, length);
       return EXIT_FAILURE;
