@@ -100,8 +100,8 @@ See the PDF manual at <https://lukateras.github.io/nanoid.h/man.pdf>.
 $ nanoidgen [length]
 ```
 
-Generates a Nano ID of the default length, or the specified length within 1 and
-`GETENTROPY_MAX` (256), and prints it to the standard output.
+Generates a Nano ID of the default length (21), or the specified length within
+1 and `GETENTROPY_MAX` (256), and prints it to the standard output.
 
 [`getentropy(3)`]: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html
 [`nanoid(3)`]: https://lukateras.github.io/nanoid.h/man/nanoid.3.html
