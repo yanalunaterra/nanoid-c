@@ -16,13 +16,12 @@ A tiny, secure, URL-friendly unique string ID generator for C.
 #include <stdlib.h>
 
 int main() {
-  char *id = calloc(NANOIDLEN + 1, 1);
+  char id[NANOIDLEN + 1] = "";
 
-  if (!id || nanoidgen(id, NANOIDLEN))
+  if (nanoidgen(id, NANOIDLEN))
     return EXIT_FAILURE;
 
   puts(id);
-  free(id);
 }
 ```
 
