@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  char *id = calloc(length + 1, 1);
+  char *id = calloc(length + 1, sizeof(char));
   if (!id || nanoidgen(id, length) || puts(id) < 0) {
     perror("nanoidgen");
     return EXIT_FAILURE;
