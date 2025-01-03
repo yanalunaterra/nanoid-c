@@ -84,7 +84,8 @@ See the PDF manual at <https://lukateras.github.io/nanoid.h/man.pdf>.
 
 - static inline function `int *nanoidgen(char *buffer, size_t length)`
 
-  Fills the buffer with a Nano ID of the specified length up to 256.
+  Fills the buffer with a Nano ID of the specified length up to
+  `GETENTROPY_MAX` (256).
 
   Returns the return value of [`getentropy(3)`][].
 
