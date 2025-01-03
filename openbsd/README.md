@@ -43,6 +43,11 @@ strings. You've already seen this format elsewhere: on YouTube!
 A default Nano ID is 21 characters long, encoding 126 bits of entropy at 6 bits
 per character.
 
+[`nanoid.h`][] is a self-contained Nano ID generator built on top of the
+[`getentropy(2)`][] randomness source. It's as portable as [`getentropy(2)`][]
+itself, which now is a part of the POSIX standard. Just grab the header and use
+it wherever you wish!
+
 [Base64url]: https://datatracker.ietf.org/doc/html/rfc4648#section-5
 
 ## Usage
