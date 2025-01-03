@@ -53,8 +53,8 @@ use it wherever you wish!
 ## Usage
 
 Works out of the box on NetBSD, OpenBSD, Linux, Android, macOS, illumos,
-Solaris, FreeBSD, DragonFly, Haiku, Fuchsia, Emscripten, and WASI. Windows
-support requires a [`getentropy(3)`][] shim.
+Solaris, GNU Hurd, FreeBSD, DragonFly, Haiku, Fuchsia, Emscripten, and WASI.
+Windows support requires a [`getentropy(3)`][] shim.
 
 To include [`nanoid(3)`][] copy [`nanoid.h`][] and [`LICENSE.txt`][] to your
 project.
