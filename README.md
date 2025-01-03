@@ -90,7 +90,9 @@ See the PDF manual at <https://lukateras.github.io/nanoid.h/man.pdf>.
 
 ### [`nanoidgen(1)`][]
 
-Usage: `nanoidgen [length]`
+```
+$ nanoidgen [length]
+```
 
 Generates a Nano ID of the default length, or the specified length within 1 and
 256, and prints it to the standard output.
