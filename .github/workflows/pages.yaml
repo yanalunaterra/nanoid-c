@@ -16,13 +16,7 @@ jobs:
     steps:
     - run: sudo apt install -y mandoc
     - uses: actions/checkout@v4
-    - run: mkdir -p pub/man/
-    - run: mman -T html ./nanoid.3 > pub/man/nanoid.3.html
-    - run: mman -T html ./nanoidgen.1 > pub/man/nanoidgen.1.html
-    - run: mman -T pdf ./nanoid.3 ./nanoidgen.1 > pub/man.pdf
-    - run: mkdir -p pub/openbsd/man/
-    - run: mman -T html ./openbsd/nanoid.3 > pub/openbsd/man/nanoid.3.html
-    - run: mman -T pdf ./openbsd/nanoid.3 ./nanoidgen.1 > pub/openbsd/man.pdf
+    - run: make all
     - uses: actions/upload-pages-artifact@v3
       with:
         path: pub
