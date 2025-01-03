@@ -31,8 +31,8 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  char id[GETENTROPY_MAX + 1] = "";
-  if (nanoidgen(id, length) || puts(id) < 0) {
+  char *id = calloc(length + 1, 1);
+  if (!id || nanoidgen(id, length) || puts(id) < 0) {
     perror("nanoidgen");
     return EXIT_FAILURE;
   }
