@@ -5,11 +5,14 @@
 
 int main(int argc, char *argv[]) {
   size_t length = NANOIDLEN;
-
   if (argc == 2) {
     length = strtoul(argv[1], NULL, 10);
-    if (errno || length == 0) {
+    if (errno) {
       fprintf(stderr, "nanoidgen: Invalid length: %s\n", argv[1]);
+      return EXIT_FAILURE;
+    }
+    if (length < 1) {
+      fprintf(stderr, "nanoidgen: Minimum length 1, got: %zu\n", length);
       return EXIT_FAILURE;
     }
     if (length > /* GETENTROPY_MAX */ 256) {
