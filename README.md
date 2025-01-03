@@ -11,7 +11,7 @@ A tiny, secure, URL-friendly unique string ID generator for C.
 - **Portable.** POSIX-compliant. Available in [29 programming languages][ports].
 
 ```c
-#include "nanoid.h"
+#include <nanoid.h>
 #include <stdio.h>
 #include <stdlib.h>
 
