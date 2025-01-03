@@ -45,8 +45,8 @@ per character.
 
 [`nanoid.h`][] is a self-contained Nano ID generator built on top of the
 [`getentropy(3)`][] randomness source. It's as portable as [`getentropy(3)`][]
-itself, which now is a part of the POSIX standard. Just grab the header and use
-it wherever you wish!
+itself, which is a part of the POSIX.1-2024 standard. Just grab the header and
+use it wherever you wish!
 
 [Base64url]: https://datatracker.ietf.org/doc/html/rfc4648#section-5
 
