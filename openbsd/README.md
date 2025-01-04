@@ -62,9 +62,10 @@ To build [`nanoidgen(1)`][] run `make nanoidgen`.
 
 To build and install the project use [Meson][]:
 
-```
-$ meson setup ../nanoid
-$ ninja -C ../nanoid install
+```sh
+meson setup ../nanoid && \
+  ninja -C ../nanoid && \
+  sudo ninja -C ../nanoid install
 ```
 
 [`nanoid.h`]: ../nanoid.h
